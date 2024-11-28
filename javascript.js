@@ -1,4 +1,4 @@
-function createGrid(size = 16) {
+function createGrid(size = 256) {
     const containerDiv = document.querySelector(".gridContainer");
 
     for(let i = 0; i < size; i++) {
@@ -12,13 +12,14 @@ function createGrid(size = 16) {
 
 const gridStyle = 
     `border-color: #000000; 
-    border-width: 1px;
+    border-width: 0.1px;
     border-style: solid;
     box-sizing: border-box;
-    margin: 2px;
-    width: 40px;
-    height: 40px;
-    flex: auto`;
+    margin: 0px;
+    aspect-ratio: 1/1;
+    width: 24px;
+    height: 24px;
+    flex: auto;`;
 
-    
+
 createGrid();
