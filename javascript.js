@@ -13,7 +13,6 @@ function createGrid(length = sideLength) {
         newBox.style.width = `${400/length}px`;
         containerDiv.appendChild(newBox);
         console.log(`Created new box ${(i+1)}`);
-        console.log(newBox.getAttribute('style'));
         newBox.addEventListener('mouseover', changeColorBlue);
         newBox.addEventListener('mouseout', changeColorWhite);
     }
